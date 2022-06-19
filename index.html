@@ -1,24 +1,73 @@
-<html lang="en-GB">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>TJ Cole's Portfolio Website</h1>
-    <h2> I am an Analyst with the following technical skills:
-    <ul>
-        <l1> R (dplyr, ggplot, shiny, R Markdown) </l1>
-        <l1> Python (pandas, numpy) </l1>
-        <l1> SQL (MySQL, Redshift) </l1>
-        <l1> Git </l1>
-    </ul>
-    </h2>
-    <iframe height="1000" width="100%" frameborder="no" src="https://tjdc94.shinyapps.io/happy_app/"> </iframe>
-    <iframe height="1000" width="100%" frameborder="no" src="https://tjdc94.shinyapps.io/movie_app/"> </iframe>
-    <iframe height="1000" width="100%" frameborder="no" src="https://tjdc94.shinyapps.io/epl_app/"> </iframe>
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TJ Cole</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <!-- ***********************  ABOUT / PROFILE  *********************** -->
+            <header>
+                <div class="content-wrap">
+                    <h1>TJ Cole</h1>
+                    <h2>Product + Data Analyst</h2>
+                    <ul>
+                        <l1> R (dplyr, ggplot, shiny, R Markdown) </l1>
+                        <l1> SQL (MySQL, Redshift) </l1>
+                        <l1> Python (pandas, numpy) </l1>
+                        <l1> Git </l1>
+                    </ul>
+                    <p>Please find below some examples of data visualisations I have created using R Shiny. </p>
+                    <p>Click here to download a copy of my <a class="btn" href="cv.pdf" download="Tonye Daniel Cole CV.pdf">CV</a></p>
+            </div>
+            </header>
+
+        <!-- ********************  PROJECTS / PORTFOLIO  ********************* --> 
+        <section class= "projects">
+            <div class="divider">
+                <h2>Featured Projects</h2>
+
+                <!-- Movie App -->
+                <section class="project-item">
+                    <h3>Top 1000 IMDB Movies by Genre</h3>
+                    <p>The visualisation below highlights the relationship between IMDB rating and the genre of the top 1000 rated movies on IMDB. The size of the bubbles denotes the movie's Gross Earnings. Hover over each bubble to display more information of the bubble. You can hide or unhide each category of movie by clicking on the legend</p>
+                    <iframe height="1000" width="100%" frameborder="no" src="https://tjdc94.shinyapps.io/movie_app/" alt="IMDB Movie Visualisation"> </iframe>
+                </section>
+
+                 <!-- EPL App -->
+                <section class="project-item">
+                    <h3>Premier League Expected Goals vs Expected Assists 20/21</h3>
+                    <p>The visualisation below shows the relationship between Expected Goals & Expected Assists for each player that played over 1000 minutes in the 2020/2021 season. You can use the dropdown menu on the left to filter by position or by club</p>
+                    <iframe height="500" width="100%" frameborder="no" src="https://tjdc94.shinyapps.io/epl_app/"> </iframe>
+                </section>
+
+                 <!-- Happy App -->
+                <section class="project-item">
+                    <h3>World Happiness Map</h3>
+                    <p>The map below shows the happiness score of each country in the world. The darker the shading the happier the country is. You can hover over each country to see their exact happiness score and also see the countries GDP in US Dollars($). Use the + and - symbols in the top left corner to zoom in and out of the map</p>
+                    <iframe height="1000" width="100%" frameborder="no" src="https://tjdc94.shinyapps.io/happy_app/"> </iframe>
+                </section>
+            </div>
+        </section>
+
+        <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+        <footer>
+            <div class="content-wrap">
+                <h2>Let's Keep in Touch!</h2>
+
+                <!-- Social media and contact links. Add or remove any networks. -->
+                <ul class ="contact-list">
+                    <li><a href="mailto:tjd.cole@gmail.com">tjd.cole@gmail.com</a></li>
+                    <li><a href="cv.pdf" download="Tonye Daniel Cole CV.pdf">CV</a></li>
+                    <li><a href="https://www.linkedin.com/in/tj-daniel-cole-msc-0845b8100/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <script src="Leaflet.Sleep.js"></script>
 </body>
 </html>
 
