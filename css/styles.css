@@ -58,7 +58,7 @@ h3 {
 .divider > section {
     overflow: hidden;
     border-bottom: 1px dashed #343434;
-    padding: 25px 0;
+    padding: 25px 10px;
 }
 .divider > section:last-of-type {
     border-bottom: none;
